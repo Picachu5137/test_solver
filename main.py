@@ -7,11 +7,12 @@ from terma import TermArt
 # student_number: "просто строка", password: "тоже строка", district_code: "значение элемента списка выбранной организации", organization_code: "код организации"
 users = [
 {
-    "student_number": "7", "password": "9821", "district_code": "24", "organization_code": "1"
+    "student_number": "1", "password": "1111", "district_code": "24", "organization_code": "11"
 },
         ]
 
-with open("answers1.json") as file:
+# read ansers.json
+with open("answers.json") as file:
     answers: dict = json.loads(file.read())
     
 print(TermArt.WELCOME)
@@ -21,6 +22,7 @@ for i in users:
     print(f"номер: {i["student_number"]:<4} пароль: {i["password"]:^5}")
 print(f"всего пользователей: {len(users)}")
 print(TermArt.LINE)
+
 print("ответы: ")
 for key, val in answers.items():
     print(f"{key:<120}  {val}")
