@@ -1,4 +1,4 @@
-# narcotest solver
+# risktest solver
 
 # How to use
 To start using, you need to configure webdriver for selenium. In **webcrawler.py** you need set path to chromedriver
